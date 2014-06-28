@@ -1,0 +1,637 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <title>YOUTHQUAKE</title>
+    <link rel="Shortcut Icon" href="icon.ico"/>
+    <script type="text/javascript">
+        <!--
+        function ondisplay(x) {
+            document.getElementById("thbody0").style.display = "none";
+            document.getElementById("thbody1").style.display = "none";
+            document.getElementById("thbody2").style.display = "none";
+            document.getElementById("thbody3").style.display = "none";
+            document.getElementById("thbody4").style.display = "none";
+            document.getElementById("thbody5").style.display = "none";
+            document.getElementById("thbody6").style.display = "none";
+            document.getElementById("thbody7").style.display = "none";
+            document.getElementById("thbody10").style.display = "none";
+            document.getElementById("thbody9").style.display = "none";
+            document.getElementById("thbody8").style.display = "none";
+            document.getElementById("thbody51").style.display = "none";
+            document.getElementById("thbody71").style.display = "none";
+            if (x === document.getElementById("thbody2")) {
+                document.getElementById("directions").innerHTML =
+                        "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6639.968078990263!2d-122.42085470000004!3d37.72839954999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7ef384c614a9%3A0xe1ae76c58c87d814!2sPortola+Baptist+Church%2C+Pioche+Street%2C+San+Francisco%2C+CA!5e1!3m2!1sen!2sus!4v1389898101144\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\"></iframe>";
+            }
+            x.style.display = "block";
+        }
+        function show(imageSrc) {
+            if (document.images) document.images['bigpic'].src = imageSrc;
+        }
+        //-->
+    </script>
+    <style type="text/css">
+        body {
+            background-image: url('quakebg.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            padding: 0px;
+            margin: 0px;
+            font-size: 115%;
+        }
+
+        #logo {
+            float: right;
+            width: 60%;
+            margin-top: 10px;
+            height: 150px;
+            padding-right: 5%;
+        }
+
+        #cross {
+            width: 15%;
+            height: 100px;
+            padding-right: 10%;
+        }
+
+        #bottom {
+            position: fixed;
+            bottom: 0px;
+            width: 100%;
+            height: 15%;
+            z-index: -1;
+        }
+
+        #sidebar {
+            float: left;
+            width: 20%;
+            text-align: right;
+        }
+
+        .thbody {
+            float: right;
+            width: 70%;
+            padding-left: 5%;
+            padding-right: 5%;
+            display: none;
+            text-align: center;
+        }
+
+        #thbody0 {
+            text-align: center;
+        }
+
+        .home {
+            float: right;
+            width: 70%;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+
+        .directions {
+            font-size: 115%;
+        }
+
+        span {
+            font-weight: bold;
+        }
+
+        .orange {
+            color: #F7A70A;
+        }
+
+        h2 {
+            font-size: 115%;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        #intro {
+            width: 20%;
+            font-size: 80%;
+            text-align: right;
+        }
+
+        table {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .left {
+            float: left;
+            width: 100px;
+            height: 100px;
+        }
+
+        .right {
+            float: right;
+            width: 100px;
+            height: 100px;
+        }
+
+        .break {
+            clear: both;
+        }
+
+        .link {
+            color: blue;
+            cursor: pointer;
+        }
+
+        a:link {
+            color: black;
+        }
+
+            /* unvisited link */
+        a:visited {
+            color: black;
+        }
+
+            /* visited link */
+        a:hover {
+            color: black;
+        }
+
+            /* mouse over link */
+        a:active {
+            color: black;
+        }
+
+            /* selected link */
+        #thbody8 img {
+            float: left;
+            margin: 10px;
+        }
+
+        #thbody8 ul, #thbody4 ul {
+            list-style-type: none;
+        }
+
+        #labc, .link {
+            background-color: #3d3626;
+        }
+
+        #sffb {
+            background-color: #f6f9fc;
+        }
+
+        #ebrpd {
+            width: 350px;
+        }
+
+        #wiba {
+            width: 300px;
+        }
+
+        #bigpic {
+            width: 500px;
+            height: 500px;
+            float: right;
+        }
+
+        .linkless {
+            width: 250px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+<img id="logo" src="./images/logo.png"/>
+
+<p id="intro"><span>American Baptist Churches of the Central Pacific Coast</span> presents:</p>
+<img id="cross" src="quakecross.gif"/>
+<img id="bottom" src="earthsplit.gif"/>
+
+<div id="sidebar">
+    <h2 onclick="ondisplay(thbody0)">Home</h2>
+
+    <h2 onclick="ondisplay(thbody1)">Registration</h2>
+
+    <h2 onclick="ondisplay(thbody2)">Location</h2>
+
+    <h2 onclick="ondisplay(thbody3)">Schedule</h2>
+
+    <h2 onclick="ondisplay(thbody4)">Mission Projects</h2>
+
+    <h2 onclick="ondisplay(thbody5)">Speaker Bios</h2>
+
+    <h2 onclick="ondisplay(thbody6)">Mission</h2>
+
+    <h2 onclick="ondisplay(thbody7)">Leadership</h2>
+
+    <h2 onclick="ondisplay(thbody8)">Sponsors</h2>
+
+    <h2 onclick="ondisplay(thbody9)">Past Events</h2>
+
+    <h2 onclick="ondisplay(thbody10)">Contact</h2>
+    <img class="spacer" src="transparent.gif"/>
+</div>
+<!--div 0 - "home"-->
+<div class="home" id="thbody0">
+    <h3>This Year's Conference Is:</h3>
+
+    <p>
+        Friday and Saturday, September 12-13, 2014<br/>
+        At Portola Baptist Church (San Francisco, CA)<br/>
+        &nbsp;<br/>
+
+    <h3>Last Year's Flier:</h3>
+    <a href="/2013flyer.pdf"><img src="./2013flyer.jpg"/></a><br/>
+    &nbsp;<br/>
+    <span class="orange">Guest Speakers: TBD</span><br/>
+    <!-- Joshua Zambrano - Hispanic American Baptist Churches of Northern California, and<br />
+    Rev. Marie Onwubuariri - American Baptist Seminary of the West, and<br />
+    Rev. Jeffrey Williams - First AME Church of Oakland, and<br /> -->
+    <span class="orange">Praise Teams</span> across the Bay Area will lead us into worship,<br/>
+    and the call to <span class="orange">Missions</span> will be answered.<br/>
+    &nbsp;<br/>
+    </p>
+</div>
+<!--div 1 - "registration information"-->
+<div class="thbody" id="thbody1">
+    <h3><a id="Registration">Registration Form and Information is included in the Flyer</a></h3>
+
+    <p>Registration is open!</p>
+
+    <p><a href="reg.pdf" target="_blank">Registration Form</a></p>
+</div>
+<!--div 2 - "location"-->
+<div class="thbody" id="thbody2">
+    <h3>
+        <a id="Location">Portola Baptist Church</a><br/>
+        225 Pinoche Street, San Francisco, CA<br/>
+        <a href="http://www.portolabaptistchurch.org/" target="_blank">www.portolabaptistchurch.org</a><br/>
+    </h3>
+
+    <p id="directions">
+    </p>
+</div>
+<!--div 3 - "schedule"-->
+<div class="thbody" id="thbody3">
+    <h3><a id="Schedule">Schedule</a></h3>
+
+    <p>Schedule is tentative and subject to change without notice.</p>
+    <table border="0">
+        <tr>
+            <td colspan="2"><span>Friday</span></td>
+        </tr>
+        <tr>
+            <td>6-7pm</td>
+            <td>Registration</td>
+        </tr>
+        <tr>
+            <td>7pm</td>
+            <td>Games</td>
+        </tr>
+        <tr>
+            <td>9pm</td>
+            <td>Worship Session #1</td>
+        </tr>
+        <tr>
+            <td>10pm</td>
+            <td>Small Group Session #1</td>
+        </tr>
+        <tr>
+            <td>11pm</td>
+            <td>Snack</td>
+        </tr>
+        <tr>
+            <td>11:30pm</td>
+            <td>Free Time</td>
+        </tr>
+        <tr>
+            <td>12am</td>
+            <td>Lights Out</td>
+        </tr>
+        <tr>
+            <td colspan="2"><span>Saturday</span></td>
+        </tr>
+        <tr>
+            <td>8am</td>
+            <td>Breakfast</td>
+        </tr>
+        <tr>
+            <td>8:30am</td>
+            <td>Worship Session #2</td>
+        </tr>
+        <tr>
+            <td>9:30am</td>
+            <td>Small Group Session #2</td>
+        </tr>
+        <tr>
+            <td>10:30am</td>
+            <td>Head to Mission Project (lunch is included)</td>
+        </tr>
+        <tr>
+            <td>4pm</td>
+            <td>Small Group Session #3</td>
+        </tr>
+        <tr>
+            <td>5pm</td>
+            <td>Dinner</td>
+        </tr>
+        <tr>
+            <td>6pm</td>
+            <td>Worship Session #3 (+ Testimonies)</td>
+        </tr>
+        <tr>
+            <td>7pm</td>
+            <td>Return to your primary mission field (home)</td>
+        </tr>
+    </table>
+    <img class="spacer" src="transparent.gif"/>
+</div>
+<!--div 4 - "projects"-->
+<div class="thbody" id="thbody4">
+    <h3><a id="Projects">Mission Projects</a></h3>
+
+    <p>2013 Mission Projects (2014 TBD):</p>
+    <ul>
+        <li><a href="http://www.worldimpactbayarea.org/World_Impact_Bay_Area/Home.html" target="_blank"><img
+                src="http://static.squarespace.com/static/526ee359e4b0fc50011bf7d3/t/52c5f6f8e4b0f283670a6444/1388705539955/Bay_San_Francisco_Cinemagraph.gif?format=1500w"
+                id="wiba"/></a></li>
+        <li><a href="http://www.ebparks.org/" target="_blank"><img
+                src="http://www.ebparks.org/SharedSites/3/templates/images/eastbay/header-level1.jpg" id="ebrpd"/></a>
+        </li>
+        <li><a href="http://cityteam.org/san-francisco/" target="_blank"><img
+                src="http://cityteam.org/_images/logo_cityteam_light.png"/></a></li>
+        <li><a href="http://www.seafarersministry.com/index.html" target="_blank">Seafarer's Ministry of the Golden
+            Gate</a></li>
+        <li><a href="http://www.sffoodbank.org/" target="_blank"><img
+                src="http://www.sffoodbank.org/sites/all/themes/sffb/images/sffb-logo.png" id="sffb"/></a></li>
+        <li><a href="https://www.facebook.com/pages/Allen-Temple-Streets-Disciples-Ministry/103434706406624"
+               target="_blank"><img src="https://www.allen-temple.org/images/atbc-logo/allen-temple-logo.png"/></a></li>
+    </ul>
+    <img class="spacer" src="transparent.gif"/>
+</div>
+<!--div 5 - "speaker bio"-->
+<div class="thbody" id="thbody5">
+    <h3><a id="Speakers">Speakers TBD:</a></h3>
+    <!--
+    <p><span>Mr. Joshua Zambrano</span><br />Josh is the Youth Pastor for Iglesia Roca De Salvacion (Rock of Salvation)
+    in the Mission District of San Francisco and was the Worship Minister for a local group of
+    various churches named Khayeel (Greek for 'Mighty Moving Force'), and he has worked with One Truth Ministries,
+    the Youth Department for the Hispanic American Baptist Churches of Northern California.  He has
+    inspired and blessed many.</p>-->
+    <p><span onclick="ondisplay(thbody51)" class="link">Past Speakers</span></p>
+</div>
+<!--div 6 - "our mission"-->
+<div class="thbody" id="thbody6">
+    <h3><a id="Mission">Why the Name?</a></h3>
+
+    <p>
+        In the natural realm, a 'quake' is a powerful movement of the earth's surface.
+        In the spiritual realm, this movement may sometimes be viewed as both initiated by,
+        and used for the glory of, God.</p>
+    <ul>
+        <li>An earthquake accompanied the tearing of the veil (Matthew 27:51),</li>
+        <li>And again when the stone was rolled away (Matthew 28:2).</li>
+        <li>Paul and Silas were released from prison through one (Acts 16:26),</li>
+        <li>And earthquakes play an important role in John's vision (Revelation 6:12, for example).</li>
+    </ul>
+    <p>
+        It is this sort of movement that we seek among God's youth. It is both the
+        transformation of the individual's heart as well as the reformation of a community.
+        It is the movement of God amongst God's people as well as an invitation to join in
+        that movement.<br/>
+        A movement of this magnitude necessarily involves one's whole self. The weekend has
+        been prayerfully designed to engage our youth at all levels. The mind is engaged
+        through message times and times of reflection; the heart is engaged through times of
+        worship (by music) and testimony; our 'strength' is engaged during the missional
+        projects; and the soul is nurtured throughout the whole time by life in community -
+        including the times of play.<br/>
+        God, come move in a mighty way amongst us, and in us, and through us. Amen. Even so,
+        come, Lord Jesus (Revelation 22:20).<br/>
+        <img class="spacer" src="transparent.gif"/>
+    </p>
+</div>
+<!--div 7 - "about the leadership"-->
+<div class="thbody" id="thbody7">
+    <h3><a id="Leadership">Leadership for Youthquake is being provided by:</a></h3>
+
+    <p>
+        <span>Admin and Logistics</span><br/>
+        Karen Yee - New Life Christian Fellowship<br/>
+        Katie Choy-Wong - New Life Christian Fellowship<br/>
+        Chad Plantenberg - Community Baptist Church of San Mateo<br/>
+        <span>Publicity</span><br/>
+        Chad Plantenberg - Community Baptist Church of San Mateo<br/>
+        Randy Fong - New Life Christian Fellowship<br/>
+        Tashi Vedel - New Life Christian Fellowship<br/>
+        <span>Site and Food</span><br/>
+        Gloria - Portola Baptist Church<br/>
+        Elias Soto - Portola Baptist Church<br/>
+        Cristhiam Castro - Primera Baptisa de la Ciudad<br/>
+        <span>Mission Projects</span><br/>
+        Cristhiam Castro - Primera Baptisa de la Ciudad<br/>
+        Mervin Castro - Primera Baptisa de la Ciudad<br/>
+        Tina Atencio - First Baptist Church of Alameda<br/>
+        <span>Small Groups</span><br/>
+        Katie Choy-Wong - New Life Christian Fellowship<br/>
+        Tashi Vedel - New Life Christian Fellowship<br/>
+        <span>Games and Recreation</span><br/>
+        Anthony Carnero - First Baptist Church of Alameda<br/>
+        James George - First Baptist Church of Alameda<br/>
+        Ally Cospin - Portola Baptist Church<br/>
+        <span>Worship and Miscellany</span><br/>
+        Dan French - Allen Temple Baptist Church<br/>
+        Elias Soto - Portola Baptist Church<br/>
+        Karen Yee - New Life Christian Fellowship<br/>
+        Lone Lazum - Oakland Burmese Mission Baptist Church<br/>
+        Moa Imchen - Alliance of Asian American Baptist Churches<br/>
+        <img class="spacer" src="transparent.gif"/>
+    </p>
+
+    <p><span onclick="ondisplay(thbody71)" class="link">Past Leadership Teams</span></p>
+</div>
+<!--div 8 - "sponsors"-->
+<div class="thbody" id="thbody8">
+    <h3><a id="Sponsors">Sponsors</a></h3>
+    <h4>We would like to thank these organizations and individuals for their sponsorship of this event:</h4>
+    <h4>Associations and Organizations</h4>
+    <ul>
+        <li><span class="linkless">American Baptist Churches of the Central Pacific Coast</span></li>
+        <li><a href="http://www.absw.edu/" target="_blank"><img
+                src="http://absw.edu/absw/static/images/top_c1_logo.gif"/></a></li>
+        <li><span class="linkless">Association of Northern California American Baptists</span></li>
+        <p class="break">&nbsp;</p>
+        <li><a href="http://evergreen-abc.org/" target="_blank"><img src="/images/evergreensmall.png"/></a></li>
+        <li><a href="http://growinghealthychurches.org/" target="_blank"><img
+                src="http://growinghealthychurches.com/wp-content/uploads/2013/09/GHCLogo2013330x6016-bit.jpg"/></a>
+        </li>
+        <li><a href="http://www.philmeads.org/pcba/" target="_blank"><img src="/images/pcbasmall.png"/></a></li>
+        <li><a href="http://www.redwoodglen.com" target="_blank"><img
+                src="http://www.redwoodglen.com/images/index2_06.jpg"/></a></li>
+    </ul>
+    <h4 class="break">Churches</h4>
+    <ul>
+        <li><a href="http://www.allen-temple.org/" target="_blank"><img
+                src="https://www.allen-temple.org/images/atbc-logo/allen-temple-logo.png"/></a></li>
+        <p class="break">&nbsp;</p>
+        <li><a href="https://www.facebook.com/pages/First-Baptist-Church-of-Alameda-CA/184810551283" target="_blank">First
+            Baptist Church of Alameda</a></li>
+        <li><a href="http://www.labcoakland.org/index.php" target="_blank"><img
+                src="http://www.labcoakland.org/labc_logo.png" id="labc"/></a></li>
+        <li><span class="linkless">Lu-Mienh Friendship Baptist Church</span></li>
+        <li><a href="http://www.newlifebayarea.org/" target="_blank"><img
+                src="http://www.newlifebayarea.org/templates/Alpha/img/logo.gif"/></a></li>
+        <li><a href="http://www.obmbc-ca.org/" target="_blank"><img
+                src="http://www.obmbc-ca.org//templates/touch_of_soul/images/s5_logo.png"/></a></li>
+        <li><a href="http://portolabaptistchurch.org/" target="_blank"><img src="/images/portolasmall.png"/></a></li>
+    </ul>
+    <h4 class="break">Individuals</h4>
+    <ul>
+        <li>Rev. Steve and Trudi Bils</li>
+        <li>Rev. Carole Moore and Robert Moore</li>
+    </ul>
+    <img class="spacer" src="transparent.gif"/>
+</div>
+<!--div 9 - "past events"-->
+<div class="thbody" id="thbody9">
+    <h3><a id="Past">Photo Gallery of 2013 event coming soon</a></h3>
+    <img src="transparent.gif" id="bigpic"/>
+    <img src="transparent.gif" class="left" onmouseover="show(transparent.gif)"/>
+    <img src="transparent.gif" class="left" onmouseover="show(transparent.gif)"/>
+    <img src="transparent.gif" class="left" onmouseover="show(transparent.gif)"/>
+    <img src="transparent.gif" class="left" onmouseover="show(transparent.gif)"/>
+    <img src="transparent.gif" class="left" onmouseover="show(transparent.gif)"/>
+    <img src="transparent.gif" class="left" onmouseover="show(transparent.gif)"/>
+</div>
+<!--div 10 - "contact info"-->
+<div class="thbody" id="thbody10">
+    <h3><a id="Contact">Questions?</a></h3>
+
+    <p>Contact us at: <a href="mailto:info@youthquake.us">info@youthquake.us</a></p>
+</div>
+<!--div 51 - "past speaker bio"-->
+<div class="thbody" id="thbody51">
+    <p><span onclick="ondisplay(thbody5)" class="link">Return to Speaker Bio Main Page</span></p>
+
+    <h3>2013 Speakers:</h3>
+
+    <p><span>Rev. Marie Onwubuariri</span><br/><img src="/marie.jpg" class="right"/>
+        Marie self-defines as a 1.75 Filipina-American - born in the Philippines, raised in the U.S.,
+        but not quite the same as what society calls a 1.5 gen immigrant (ask her if you want more info!)
+        This journey of self-identity emerged for her a passion and calling to be an effective
+        intercultural leader, bridging between people of different generations, ethnicities, and walks of
+        life. She was raised in an American Baptist church in New York City, and after a career in the
+        retail industry she followed God's leading to devote her life to following Christ. Marie comes
+        with her ministry experiences as an active lay person, a youth director, a young adult minister,
+        a senior pastor, an emerging leader in the American Baptist denomination, and currently loves
+        helping people discern their call as the Director of Admissions at the American Baptist Seminary
+        of the West in Berkeley. She lives in San Pablo with her husband, two young kids, and beloved dog.
+        She enjoys a variety of music, photography, and a good game of volleyball.</p>
+
+    <p><span>Rev. Jeffrey Wilson</span><br/>
+        Music and the Word of God is Rev. Jeffrey's passion. He is currently the Minister of Music at
+        First AME Church in Oakland, and he is the Youth Bible Study teacher for the Youth Ministry at
+        Allen Temple Baptist Church and a guest preacher at Freedom, the youth church at Allen Temple.</p>
+
+    <p><span>Mr. Joshua Zambrano</span><br/>Josh is the Youth Pastor for Iglesia Roca De Salvacion (Rock of Salvation)
+        in the Mission District of San Francisco and was the Worship Minister for a local group of
+        various churches named Khayeel (Greek for 'Mighty Moving Force'), and he has worked with One Truth Ministries,
+        the Youth Department for the Hispanic American Baptist Churches of Northern California. He has
+        inspired and blessed many.</p>
+
+    <h3>2012 Speaker:</h3>
+
+    <p><span>John W. Polite, III</span><br/><img src="jp.jpg" class="right"/>
+        John Polite was born and raised in Riverside, California where he attended public
+        schools and was active in the life of the church. He received his bachelor of arts in
+        communications from Cal Poly Pomona in 1992, where he served as president of the campus
+        chapter of the NAACP, Alpha Phi Alpha Fraternity, Inc. and was an editor of the campus
+        newspaper, and active in Cal Poly's chapter of Campus Crusade for Christ. He was a
+        staff writer for the Inland Valley Daily Bulletin, and holds a Master of Divinity
+        degree from the American Baptist Seminary of the West in Berkeley, CA. He has been
+        active on a national level in the American Baptist Churches in the USA since 1997
+        serving as a member of the Youth Ministry Resource Team, the Statements of Concern
+        Committee and the Minister's Council Executive Committee. He serves on the board of
+        trustees for the American Baptist Seminary of the West. In his time in local church
+        ministry, he served as an intern at the First Baptist Church of Riverside, CA, and at
+        Church of the Good Shepherd in Oakland, CA. He became the first African American
+        pastoral staff member at the historic First Baptist Church of Los Angeles in 1997 and
+        was ordained into the gospel ministry early on in his tenure at First L.A. He was the
+        Senior Pastor of the ethnically and culturally diverse Panorama Baptist Church in
+        Arleta, CA from 2001 to 2012. Currently, JP serves as the worship arts consultant for
+        the American Baptist Churches of Los Angeles, the Worship Arts director for the First
+        Baptist Church of Los Angeles, and is the lead facilitator of reMIX, a burgeoning faith
+        community of young un-churched and de-churched young adults who are using new and
+        creative ways to tell God's story to a generation that has gotten lost in the
+        translation.</p>
+
+    <p><span onclick="ondisplay(thbody5)" class="link">Return to Speaker Bio Main Page</span></p>
+</div>
+<!--div 71 - "about the leadership"-->
+<div class="thbody" id="thbody71">
+    <h3>2013 Leadership was provided by:</h3>
+
+    <p><span onclick="ondisplay(thbody7)" class="link">Return to Main Leadership Page</span></p>
+
+    <p>
+        <span>Admin and Logistics</span><br/>
+        Karen Yee - New Life Christian Fellowship<br/>
+        Katie Choy-Wong - New Life Christian Fellowship<br/>
+        <span>Publicity</span><br/>
+        Chad Plantenberg - Community Baptist Church of San Mateo<br/>
+        Nick Powell - First Baptist Church of Alameda<br/>
+        Tashi Vedel - New Life Christian Fellowship<br/>
+        <span>Site and Food</span><br/>
+        Kendra Roberts - Allen Temple Baptist Church<br/>
+        Pam Wilson - Allen Temple Baptist Church<br/>
+        <span>Mission Projects</span><br/>
+        Allison Tanner - Lakeshore Avenue Baptist Church<br/>
+        Tina Atencio - First Baptist Church of Alameda<br/>
+        <span>Small Groups</span><br/>
+        Chad Plantenberg - Community Baptist Church of San Mateo<br/>
+        Katie Choy-Wong - New Life Christian Fellowship<br/>
+        Tashi Vedel - New Life Christian Fellowship<br/>
+        <span>Games and Recreation</span><br/>
+        Anthony Carnero - First Baptist Church of Alameda<br/>
+        James George - First Baptist Church of Alameda<br/>
+        <span>Worship and Miscellany</span><br/>
+        Dan French - Allen Temple Baptist Church<br/>
+        Elias Soto - Portola Baptist Church<br/>
+        Karen Yee - New Life Christian Fellowship<br/>
+        Lone Lazum - Oakland Burmese Mission Baptist Church<br/>
+        Moa Imchen - Alliance of Asian American Baptist Churches<br/>
+        Marie Onwubuariri - American Baptist Seminary of the West<br/>
+        <img class="spacer" src="transparent.gif"/>
+    </p>
+
+    <h3>2012 Leadership was provided by:</h3>
+
+    <p>
+        <span>Admin and Logistics</span><br/>
+        Katie Choy-Wong - New Life Christian Fellowship<br/>
+        Allison Tanner - Lakeshore Avenue Baptist Church<br/>
+        <span>Worship and Media</span><br/>
+        Elias Soto - Portola Baptist Church<br/>
+        Ron Aragon - Portola Baptist Church<br/>
+        Visal Sok - First Baptist Church of San Francisco<br/>
+        Tashi Vedel - New Life Christian Fellowship<br/>
+        <span>Site and Food</span><br/>
+        Lone Lazum - Oakland Burmese Mission Baptist Church<br/>
+        Larry Chow - Oakland Burmese Mission Baptist Church<br/>
+        David Sein-Lwin - Oakland Burmese Mission Baptist Church<br/>
+        Emerald Wong - Oakland Burmese Mission Baptist Church<br/>
+        <span>Mission Projects</span><br/>
+        Allison Tanner - Lakeshore Avenue Baptist Church<br/>
+        Katie Choy-Wong - New Life Christian Fellowship<br/>
+        <span>Small Groups</span><br/>
+        Kendra Roberts - Allen Temple Baptist Church<br/>
+        Tina Atencio - First Baptist Church of Alameda<br/>
+        Visal Sok - First Baptist Church of San Francisco<br/>
+        <span>Games</span><br/>
+        Tina Atencio - First Baptist Church of Alameda<br/>
+        Visal Sok - First Baptist Church of San Francisco<br/>
+        Chad Plantenberg - Redwood Glen Christian Camp and Conference Center<br/>
+        <img class="spacer" src="transparent.gif"/>
+    </p>
+
+    <p><span onclick="ondisplay(thbody7)" class="link">Return to Main Leadership Page</span></p>
+</div>
+</body>
+</html>
