@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>YOUTHQUAKE</title>
+    <link rel="Shortcut Icon" href="icon.ico"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<div class="navbar" role="navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3 col-md-2 centered">
+
+                <p id="intro"><span>American Baptist Churches of the Central Pacific Coast </span> presents:</p>
+                <img id="cross" src="images/quakecross.gif"/>
+            </div>
+            <div class="col-sm-9 col-md-10 centered">
+                <img id="logo" src="./images/logo.png"/>
+            </div>
+        </div>
+    </div>
+</div>
+<!--div 0 - "home"-->
+<div class="container">
+    <div class="row">
+        {{md './src/pages/sidebar.md'}}
+
+        <div class="col-sm-9 col-md-10 main">
+            {{>body}}
+        </div>
+    </div>
+    <!--<div id="footer" class="row">-->
+    <!--<img id="bottom" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" src="images/earthsplit.gif"/>-->
+    <!--</div>-->
+</div>
+</div>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/youthquake.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

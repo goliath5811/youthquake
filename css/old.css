@@ -1,0 +1,163 @@
+body {
+    background-image: url('../images/quakebg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    padding: 0px;
+    margin: 0px;
+    font-size: 115%;
+}
+
+#logo {
+    float: right;
+    width: 60%;
+    margin-top: 10px;
+    height: 150px;
+    padding-right: 5%;
+}
+
+#cross {
+    width: 15%;
+    height: 100px;
+    padding-right: 10%;
+}
+
+#bottom {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 15%;
+    z-index: -1;
+}
+
+#sidebar {
+    float: left;
+    width: 20%;
+    text-align: right;
+}
+
+.thbody {
+    float: right;
+    width: 70%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: none;
+    text-align: center;
+}
+
+#thbody0 {
+    text-align: center;
+}
+
+.home {
+    float: right;
+    width: 70%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.directions {
+    font-size: 115%;
+}
+
+span {
+    font-weight: bold;
+}
+
+.orange {
+    color: #F7A70A;
+}
+
+h2 {
+    font-size: 115%;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#intro {
+    width: 20%;
+    font-size: 80%;
+    text-align: right;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.left {
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+
+.right {
+    float: right;
+    width: 100px;
+    height: 100px;
+}
+
+.break {
+    clear: both;
+}
+
+.link {
+    color: blue;
+    cursor: pointer;
+}
+
+a:link {
+    color: black;
+}
+
+unvisited link
+a:visited {
+    color: black;
+}
+
+visited link
+a:hover {
+    color: black;
+}
+
+mouse over link
+a:active {
+    color: black;
+}
+
+selected link
+#thbody8 img {
+    float: left;
+    margin: 10px;
+}
+
+#thbody8 ul, #thbody4 ul {
+    list-style-type: none;
+}
+
+#labc, .link {
+    background-color: #3d3626;
+}
+
+#sffb {
+    background-color: #f6f9fc;
+}
+
+#ebrpd {
+    width: 350px;
+}
+
+#wiba {
+    width: 300px;
+}
+
+#bigpic {
+    width: 500px;
+    height: 500px;
+    float: right;
+}
+
+.linkless {
+    width: 250px;
+    float: left;
+}
