@@ -65,7 +65,7 @@ li > a {
     font-weight: bold;
 }
 
-#mission-projects {
+#sponsors {
     list-style: none;
     padding-left: 0px;
 }
@@ -76,4 +76,16 @@ li > a {
 
 .right {
     float: right;
+}
+
+.sponsor-logo {
+    max-width: 150px;
+}
+
+.church-logo, .mission-logo {
+    max-width: 300px;
+}
+
+.row {
+    padding-bottom: 15px;
 }
