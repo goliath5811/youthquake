@@ -8,7 +8,7 @@
     padding-right: 20px;
 }
 .nav-sidebar > .active > a, .nav-sidebar > .active > a:hover, .nav-sidebar > .active > a:focus {
-    background-color: #428bca;
+    background-color: #ff9300;
     color: #fff;
 }
 

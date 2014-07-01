@@ -95,7 +95,7 @@ module.exports = function (grunt) {
         assemble: {
             options: {
 //                assets: "path/to/assets",
-                data: "path/to/config.json"
+                data: "src/data/*.json"
             },
             project: {
                 options: {
