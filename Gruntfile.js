@@ -93,14 +93,11 @@ module.exports = function (grunt) {
 
 // WHAT ARE ASSETS?
         assemble: {
-            options: {
-//                assets: "path/to/assets",
-                data: "src/data/*.json"
-            },
-            project: {
+            dev: {
                 options: {
                     layoutdir: 'layouts/',
-                    layout: "default.hbs"
+                    layout: "default.hbs",
+                    data: "src/data/dev/data.json"
                 },
                 files: [
                     {
@@ -110,6 +107,22 @@ module.exports = function (grunt) {
                         flatten: true
                     }
                 ]
+            },
+            prd: {
+                options: {
+                    layoutdir: 'layouts/',
+                    layout: "default.hbs",
+                    data: "src/data/prd/data.json"
+                },
+                files: [
+                    {
+                        expand: true,
+                        src: 'src/pages/**/*.hbs',
+                        dest: 'build/',
+                        flatten: true
+                    }
+                ]
+
             }
         }
     });
@@ -123,5 +136,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('assemble');
 
     // Default task(s).
-    grunt.registerTask('default', ['clean', 'uglify', 'cssmin', 'copy', 'assemble', 'prettify', 'htmlmin']);
+    grunt.registerTask('default', ['clean', 'uglify', 'cssmin', 'copy', 'assemble:dev', 'prettify', 'htmlmin']);
+    grunt.registerTask('prd', ['clean', 'uglify', 'cssmin', 'copy', 'assemble:prd', 'prettify', 'htmlmin']);
 }
