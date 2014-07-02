@@ -7,3 +7,7 @@ $('button.present').on('click', function() {
     $('div.past-content').hide();
     $('div.present-content').show();
 });
+
+$('[data-toggle="offcanvas"]').click(function () {
+    $('.row-offcanvas').toggleClass('active')
+});
