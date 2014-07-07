@@ -3,7 +3,9 @@
 }
 
 #logo {
-    height: 150px;
+    max-width: 100%;
+    width: 520px;
+    height: auto;
 }
 
 #cross {
@@ -63,6 +65,15 @@ li > a {
 
 .row {
     padding-bottom: 15px;
+}
+
+.linkless {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+tr > td:first-child {
+    padding-right: 15px;
 }
 
 /* Sidebar */
@@ -125,3 +136,16 @@ a.list-group-item {
     background-color: transparent;
     border: none;
 }
+
+img#postcard {
+    max-width: 100%;
+    width: 500px;
+    height: auto;
+}
+
+
+/*#logo {*/
+    /*max-width: 100%;*/
+    /*width: 520px;*/
+    /*height: auto;*/
+/*}*/
