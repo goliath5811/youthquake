@@ -20,7 +20,7 @@ module.exports = function (grunt) {
                 condense: true,
                 indent_inner_html: true,
                 unformatted: [
-//                    "a",
+                    "p",
                     "pre"
                 ]
             },
