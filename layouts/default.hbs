@@ -12,19 +12,14 @@
 <div class="navbar">
     <div class="container">
         <div class="row">
-            <div class="col-sm-3 col-md-2 centered">
-                <p class="pull-left visible-xs">
-                    <button data-toggle="offcanvas" class="navbar-toggle" type="button">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </p>
-
-                <p id="intro"><span>American Baptist Churches of the Central Pacific Coast </span> presents:</p>
-                <img id="cross" src="images/quakecross.gif"/>
-            </div>
-            <div class="col-sm-9 col-md-10 centered">
+            <p class="pull-left visible-xs">
+                <button data-toggle="offcanvas" class="navbar-toggle" type="button">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </p>
+            <div class="centeredtext">
                 <img id="logo" src="./images/logo.png"/>
             </div>
         </div>
@@ -39,11 +34,12 @@
 
         <div class="col-xs-12 col-sm-9 main">
             {{>body}}
+            <hr>
+            <div id="footer" class="row centeredtext orange">
+                YouthQuake is hosted by a consortium of Northern California American Baptist Churches
+            </div>
         </div>
     </div>
-    <!--<div id="footer" class="row">-->
-    <!--<img id="bottom" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" src="images/earthsplit.gif"/>-->
-    <!--</div>-->
 </div>
 </div>
 <script src="js/jquery-1.11.1.min.js"></script>

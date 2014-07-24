@@ -1,5 +1,11 @@
-.centered {
+.centeredtext {
     text-align: center;
+}
+
+.centeredblock {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 #logo {
@@ -143,6 +149,9 @@ img#postcard {
     height: auto;
 }
 
+hr {
+    border-color: #ff9300;
+}
 
 /*#logo {*/
     /*max-width: 100%;*/
