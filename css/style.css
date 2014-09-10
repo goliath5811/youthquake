@@ -88,24 +88,31 @@ tr > td:first-child {
         position: relative;
         transition: all 0.25s ease-out 0s;
     }
+
     .row-offcanvas-right {
         right: 0;
     }
+
     .row-offcanvas-left {
         left: 0;
     }
+
     .row-offcanvas-right .sidebar-offcanvas {
         right: -50%;
     }
+
     .row-offcanvas-left .sidebar-offcanvas {
         left: -50%;
     }
+
     .row-offcanvas-right.active {
         right: 50%;
     }
+
     .row-offcanvas-left.active {
         left: 50%;
     }
+
     .sidebar-offcanvas {
         position: absolute;
         top: 0;
@@ -126,6 +133,7 @@ tr > td:first-child {
 .navbar-toggle {
     border-color: #fff;
 }
+
 .navbar-toggle:hover {
     background-color: #ddd;
 }
@@ -153,8 +161,12 @@ hr {
     border-color: #ff9300;
 }
 
+.speakerPic {
+    max-width: 300px
+}
+
 /*#logo {*/
-    /*max-width: 100%;*/
-    /*width: 520px;*/
-    /*height: auto;*/
+/*max-width: 100%;*/
+/*width: 520px;*/
+/*height: auto;*/
 /*}*/
