@@ -1,8 +1,113 @@
-<h1 class="centeredtext">Photo Gallery of 2013 event coming soon</h1>
-<img src="images/transparent.gif" id="bigpic"/>
-<img src="images/transparent.gif" class="left" onmouseover="show(transparent.gif)"/>
-<img src="images/transparent.gif" class="left" onmouseover="show(transparent.gif)"/>
-<img src="images/transparent.gif" class="left" onmouseover="show(transparent.gif)"/>
-<img src="images/transparent.gif" class="left" onmouseover="show(transparent.gif)"/>
-<img src="images/transparent.gif" class="left" onmouseover="show(transparent.gif)"/>
-<img src="images/transparent.gif" class="left" onmouseover="show(transparent.gif)"/>
+<h1 class="centeredtext">Photo Gallery of YouthQuake 2013</h1>
+
+<div class="container-fluid">
+    <div id="links">
+        <a href="{{imageUrl}}beach.jpg" title="beach" data-gallery>
+            <img src="{{imageUrl}}thumbs/beach.jpg" alt="beach">
+        </a>
+        <a href="{{imageUrl}}bills.jpg" title="bills" data-gallery>
+            <img src="{{imageUrl}}thumbs/bills.jpg" alt="bills">
+        </a>
+        <a href="{{imageUrl}}commissioning.jpg" data-gallery>
+            <img src="{{imageUrl}}thumbs/commissioning.jpg" alt="commissioning">
+        </a>
+
+        <a href="{{imageUrl}}feeding.jpg" data-gallery>
+            <img src="{{imageUrl}}thumbs/feeding.jpg" alt="feeding">
+        </a>
+
+        <a href="{{imageUrl}}feet.jpg" data-gallery>
+            <img src="{{imageUrl}}thumbs/feet.jpg" alt="feet">
+        </a>
+
+        <a href="{{imageUrl}}friends1.jpg" data-gallery>
+            <img src="{{imageUrl}}thumbs/friends1.jpg" alt="friends1">
+        </a>
+
+        <a href="{{imageUrl}}friends2.jpg" data-gallery>
+            <img src="{{imageUrl}}thumbs/friends2.jpg" alt="friends2">
+        </a>
+
+        <a href="{{imageUrl}}friends3.jpg" data-gallery>
+            <img src="{{imageUrl}}thumbs/friends3.jpg" alt="friends3">
+        </a>
+
+        <a href="{{imageUrl}}friends5.jpg" data-gallery>
+            <img src="{{imageUrl}}thumbs/friends4.jpg" alt="friends4">
+        </a>
+
+        <a href="{{imageUrl}}friends5.jpg" data-gallery>
+            <img src="{{imageUrl}}thumbs/friends5.jpg" alt="friends5">
+        </a>
+
+        <a href="{{imageUrl}}group.jpg" data-gallery>
+            <img src="{{imageUrl}}thumbs/group.jpg" alt="group">
+        </a>
+
+        <a href="{{imageUrl}}names.jpg" data-gallery>
+            <img src="{{imageUrl}}thumbs/names.jpg" alt="names">
+        </a>
+
+        <a href="{{imageUrl}}peace.jpg" data-gallery>
+            <img src="{{imageUrl}}thumbs/peace.jpg" alt="peace">
+        </a>
+
+        <a href="{{imageUrl}}port.jpg" data-gallery>
+            <img src="{{imageUrl}}thumbs/port.jpg" alt="port">
+        </a>
+
+        <a href="{{imageUrl}}prayer.jpg" data-gallery>
+            <img src="{{imageUrl}}thumbs/prayer.jpg" alt="prayer">
+        </a>
+
+        <a href="{{imageUrl}}shirts.jpg" data-gallery>
+            <img src="{{imageUrl}}thumbs/shirts.jpg" alt="shirts">
+        </a>
+
+        <a href="{{imageUrl}}singing.jpg" data-gallery>
+            <img src="{{imageUrl}}thumbs/singing.jpg" alt="singing">
+        </a>
+
+        <a href="{{imageUrl}}smallgroup.jpg" data-gallery>
+            <img src="{{imageUrl}}thumbs/smallgroup.jpg" alt="smallgroup">
+        </a>
+
+        <a href="{{imageUrl}}worship.jpg" data-gallery>
+            <img src="{{imageUrl}}thumbs/worship.jpg" alt="worship">
+        </a>
+    </div>
+</div>
+
+<div id="blueimp-gallery" class="blueimp-gallery">
+    <!-- The container for the modal slides -->
+    <div class="slides"></div>
+    <!-- Controls for the borderless lightbox -->
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+    <!-- The modal dialog, which will be used to wrap the lightbox content -->
+    <div class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body next"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left prev">
+                        <i class="glyphicon glyphicon-chevron-left"></i>
+                        Previous
+                    </button>
+                    <button type="button" class="btn btn-primary next">
+                        Next
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

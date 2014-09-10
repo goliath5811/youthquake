@@ -86,7 +86,7 @@ module.exports = function (grunt) {
         copy: {
             main: {
                 expand: true,
-                src: ['images/*', 'res/*', 'font-awesome-4.0.3/**'],
+                src: ['images/**', 'res/*', 'font-awesome-4.0.3/**'],
                 dest: 'site'
             }
         },
