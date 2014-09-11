@@ -9,7 +9,7 @@
         </p>
         <div class="centeredtext">
             <a {{#is filename "index.html"}} href="#"{{else}}href="{{url}}"{{/is}}>
-                <img id="logo" src="./images/logo.png"/>
+                <img id="logo" src="{{url}}images/logo.png"/>
             </a>
         </div>
     </div>

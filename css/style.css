@@ -165,6 +165,10 @@ hr {
     max-width: 300px
 }
 
+.clearFloat {
+    clear: both;
+}
+
 /*#logo {*/
 /*max-width: 100%;*/
 /*width: 520px;*/
