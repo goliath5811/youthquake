@@ -162,10 +162,14 @@ hr {
 }
 
 .speakerPic {
-    max-width: 300px
+    max-width: 200px;
 }
 
 .clearFloat {
+    clear: both;
+}
+
+.speakerBlock {
     clear: both;
 }
 
