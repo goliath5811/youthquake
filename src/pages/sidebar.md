@@ -16,10 +16,6 @@
     href="#"{{else}}href="{{url}}schedule.html"{{/is}}>Schedule</a>
 
     <a class="list-group-item
-    {{#is filename 'mission_projects.html'}} active{{/is}}" {{#is filename "mission_projects.html"}}
-    href="#"{{else}}href="{{url}}mission_projects.html"{{/is}}>Mission Projects</a>
-
-    <a class="list-group-item
     {{#is filename 'speaker_bios.html'}} active{{/is}}" {{#is filename "speaker_bios.html"}}
     href="#"{{else}}href="{{url}}speaker_bios.html"{{/is}}>Speaker Bios</a>
 
